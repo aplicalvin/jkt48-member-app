@@ -30,6 +30,7 @@ environment:
 dependencies:
     flutter:
         sdk: flutter
+    heroicons: 0.9.0
 
     # The following adds the Cupertino Icons font to your application.
     # Use with the CupertinoIcons class for iOS style icons.
@@ -73,9 +74,9 @@ flutter:
     # list giving the asset and other descriptors for the font. For
     # example:
     fonts:
-        - family: NotoSansJP
+        - family: "Jakarta"
           fonts:
-              - asset: assets/fonts/NotoSansJP.ttf
+              - asset: assets/fonts/PlusJakartaSans.ttf
     #       - asset: fonts/Schyler-Italic.ttf
     #         style: italic
     #   - family: Trajan Pro
