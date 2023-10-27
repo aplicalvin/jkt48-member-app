@@ -3,6 +3,7 @@ import 'package:heroicons/heroicons.dart';
 import 'package:jkt48_member_apps/screens/newsPage.dart';
 import 'package:jkt48_member_apps/screens/profilePage.dart';
 import 'package:jkt48_member_apps/screens/schedulePage.dart';
+import 'package:jkt48_member_apps/widgets/Home/ImageCaroursel.dart';
 import 'package:jkt48_member_apps/widgets/Home/MenuKuBar.dart';
 import 'package:jkt48_member_apps/widgets/Home/PointsBar.dart';
 
@@ -35,6 +36,8 @@ class HomePage extends StatelessWidget {
             PointsBar(),
             SizedBox(height: 12.0),
             MenukuBar(),
+            SizedBox(height: 12.0),
+            ImageCarouselWidget()
           ],
         ),
       ),
