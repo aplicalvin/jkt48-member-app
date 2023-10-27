@@ -5,7 +5,6 @@ import 'package:jkt48_member_apps/screens/profilePage.dart';
 import 'package:jkt48_member_apps/screens/schedulePage.dart';
 import 'package:jkt48_member_apps/widgets/Home/MenuKuBar.dart';
 import 'package:jkt48_member_apps/widgets/Home/PointsBar.dart';
-import 'package:jkt48_member_apps/widgets/Home/navbar/HomeNavbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,24 +12,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "JKT48 Apps",
+          style: TextStyle(
+            fontFamily: 'Jakarta',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: Colors.black87,
+          ),
+        ),
+        backgroundColor: Colors.transparent,
+        automaticallyImplyLeading: false,
+        elevation: 0,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding:
-                  const EdgeInsets.only(right: 12.0, left: 12.0, top: 24.0),
-              child: Text(
-                "JKT48 Apps",
-                style: TextStyle(
-                  fontFamily: 'Jakarta',
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
-              ),
-            ),
-            SizedBox(height: 12.0),
+            // SizedBox(height: 12.0),
             PointsBar(),
             SizedBox(height: 12.0),
             MenukuBar(),

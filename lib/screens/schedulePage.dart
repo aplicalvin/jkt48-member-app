@@ -9,7 +9,18 @@ class SchedulePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Schedule Page'),
+        title: Text(
+          "Schedule",
+          style: TextStyle(
+            fontFamily: 'Jakarta',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: Colors.black87,
+          ),
+        ),
+        backgroundColor: Colors.transparent,
+        automaticallyImplyLeading: false,
+        elevation: 0,
       ),
       body: Center(
         child: Text('This is the Schedule Page'),
