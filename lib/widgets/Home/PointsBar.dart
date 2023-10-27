@@ -14,11 +14,11 @@ class PointsBar extends StatelessWidget {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            Color(0xFFDC0303), // Warna pertama (#DC0303)
-            Color(0xFF9C0505), // Warna kedua (#9C0505)
+            Color(0xFFDC0303), 
+            Color(0xFF9C0505), 
           ],
-          stops: [0.153, 0.9092], // Persentase warna pertama dan kedua
-          transform: GradientRotation(98), // Sudut rotasi
+          stops: [0.153, 0.9092], 
+          transform: GradientRotation(98), 
         ),
         borderRadius: BorderRadius.circular(24.0),
       ),
