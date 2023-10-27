@@ -1,6 +1,6 @@
-# jkt48_member_apps
+# My JKT48 Apps
 
-A new Flutter project.
+Sebuah Aplikasi JKT48 (unofficial) made by Calvin Samuel Simbolon
 
 ## Getting Started
 
