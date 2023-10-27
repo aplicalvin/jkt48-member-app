@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
+import 'package:jkt48_member_apps/screens/blankPage.dart';
+import 'package:jkt48_member_apps/screens/memberList.dart';
 // import 'package:heroicons/heroicons.dart';
 import 'package:jkt48_member_apps/widgets/Home/MenuItems.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class MenukuBar extends StatelessWidget {
   const MenukuBar({super.key});
@@ -28,39 +31,55 @@ class MenukuBar extends StatelessWidget {
             children: [
               Expanded(
                 child: MenuItems(
-                  iconbang: HeroIcons.userGroup,
-                  label: 'Member',
-                  containerColor:
-                      Color(0xFFFFF2AD), // Ubah warna ke heksadesimal
-                  iconColor: Color(0xFF957F09), // Gunakan warna heksadesimal
-                ),
+                    iconbang: HeroIcons.userGroup,
+                    label: 'Member',
+                    containerColor:
+                        Color(0xFFFFF2AD), // Ubah warna ke heksadesimal
+                    iconColor: Color(0xFF957F09), // Gunakan warna heksadesimal
+                    saatklik: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => MemberList(),
+                      ));
+                    }),
               ),
               Expanded(
                 child: MenuItems(
-                  iconbang: HeroIcons.buildingOffice2,
-                  label: 'Teather',
-                  containerColor:
-                      Color(0xFFC6D5F9), // Ubah warna ke heksadesimal
-                  iconColor: Color(0xFF001D62), // Gunakan warna heksadesimal
-                ),
+                    iconbang: HeroIcons.buildingOffice2,
+                    label: 'Teather',
+                    containerColor:
+                        Color(0xFFC6D5F9), // Ubah warna ke heksadesimal
+                    iconColor: Color(0xFF001D62), // Gunakan warna heksadesimal
+                    saatklik: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    }),
               ),
               Expanded(
                 child: MenuItems(
-                  iconbang: HeroIcons.shoppingBag,
-                  label: 'JKT48 Shop',
-                  containerColor:
-                      Color(0xFFB0FFD0), // Ubah warna ke heksadesimal
-                  iconColor: Color(0xFF005F26), // Gunakan warna heksadesimal
-                ),
+                    iconbang: HeroIcons.shoppingBag,
+                    label: 'JKT48 Shop',
+                    containerColor:
+                        Color(0xFFB0FFD0), // Ubah warna ke heksadesimal
+                    iconColor: Color(0xFF005F26), // Gunakan warna heksadesimal
+                    saatklik: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    }),
               ),
               Expanded(
                 child: MenuItems(
-                  iconbang: HeroIcons.puzzlePiece,
-                  label: 'Fan Club',
-                  containerColor:
-                      Color(0xFFE1C9FF), // Ubah warna ke heksadesimal
-                  iconColor: Color(0xFF430097), // Gunakan warna heksadesimal
-                ),
+                    iconbang: HeroIcons.puzzlePiece,
+                    label: 'Fan Club',
+                    containerColor:
+                        Color(0xFFE1C9FF), // Ubah warna ke heksadesimal
+                    iconColor: Color(0xFF430097), // Gunakan warna heksadesimal
+                    saatklik: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    }),
               ),
             ],
           ),

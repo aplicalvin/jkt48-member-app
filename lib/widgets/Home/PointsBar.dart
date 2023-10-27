@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
+import 'package:jkt48_member_apps/screens/blankPage.dart';
+// import 'package:jkt48_member_apps/screens/blankPage.dart';
 import 'package:jkt48_member_apps/widgets/Home/PointsMenu.dart';
 
 class PointsBar extends StatelessWidget {
@@ -48,7 +50,7 @@ class PointsBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "200.000 P",
+                  "1.000.000 P",
                   style: TextStyle(
                     fontFamily: 'Jakarta',
                     fontWeight: FontWeight.w900,
@@ -98,25 +100,45 @@ class PointsBar extends StatelessWidget {
                 Expanded(
                   child: PointsMenu(
                     iconku: HeroIcons.plusSmall,
-                    label: 'Home',
+                    label: 'Tambah',
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    },
                   ),
                 ),
                 Expanded(
                   child: PointsMenu(
                     iconku: HeroIcons.lightBulb,
                     label: 'Info',
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    },
                   ),
                 ),
                 Expanded(
                   child: PointsMenu(
                     iconku: HeroIcons.cog6Tooth,
                     label: 'Pengaturan',
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    },
                   ),
                 ),
                 Expanded(
                   child: PointsMenu(
                     iconku: HeroIcons.rectangleStack,
                     label: 'Riwayat',
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => BlankPageHaha(),
+                      ));
+                    },
                   ),
                 ),
               ],
